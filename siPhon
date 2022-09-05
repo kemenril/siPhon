@@ -29,6 +29,7 @@ ap = argparse.ArgumentParser()
 # always defined, so we chan check against None to see whether they've been used.
 ap.set_defaults(song=None,album=None,artist=None,cmd=None) 
 ap.add_argument('-i','--base',required=True,help="Location of iPod")
+ap.add_argument('--db',help="Location of database")
 sp = ap.add_subparsers(title="Commands",help="Specify <command> -h for help on a command.")
 p_scan = sp.add_parser('scan',help="Scan device for music and write database.",aliases=['init','index'])
 p_scan.set_defaults(cmd='scan')
@@ -97,6 +98,9 @@ def readdb():
 
 def rmdb():
 	rv = True
+	if args.db:
+		print("Won't clean a database specified on the command-line. Delete it manually.")
+		return False
 	try:
 		os.unlink(dbAlbums)
 		os.unlink(dbArtists)
@@ -259,7 +263,10 @@ def get():
 
 
 if os.path.isdir(args.base):
-	dbDir           = os.path.join(args.base,"siPhon-db")
+	if args.db:
+		dbDir       = args.db
+	else:
+		dbDir= os.path.join(args.base,"siPhon-db")
 	dbArtists       = os.path.join(dbDir,"artists.db")
 	Artists         = {}
 	dbAlbums        = os.path.join(dbDir,"albums.db")
