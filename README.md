@@ -27,13 +27,34 @@ There really is none to speak of.  Put it somewhere from which you can run it.
 ### Usage
 
 First, mount your device somewhere, scan it and build the database:
-``` siPhon -i /mnt/IPOD scan ```
+
+```$ siPhon -i /mnt/IPOD scan ```
 
 Now, dig through your music collection, for example:
-``` siPhon -i /mnt/IPOD ls -a Kansas```
+```$ siPhon -i /mnt/IPOD ls -a Kansas```
 
 To pull music out, do something like:
-``` siPhon -i /mnt/ipod get -a Kansas```
+```$ siPhon -i /mnt/ipod get -a Kansas
+Artist: Kansas / Album: Point Of Know Return
+Name: Nobody's Home / File: ./iPod_Control/Music/F00/BMXG.mp3
+--------
+Artist: Kansas / Album: Kansas
+Name: Wheels / File: ./iPod_Control/Music/F00/PLWZ.mp3
+--------
+Artist: Kansas / Album: In The Spirit Of Things
+Name: Ghosts / File: ./iPod_Control/Music/F03/VVWA.mp3
+--------
+Artist: Kansas / Album: In The Spirit Of Things
+Name: T.O. Witcher / File: ./iPod_Control/Music/F03/ENIL.mp3
+--------
+Artist: Kansas / Album: Point Of Know Return
+Name: Point Of Know Return / File: ./iPod_Control/Music/F03/WAIL.mp3
+--------
+Artist: Kansas / Album: Power
+Name: Secret Service / File: ./iPod_Control/Music/F03/TYTH.mp3
+--------
 
-See ``` siPhon -h ``` for more.
+```
+
+See ```$ siPhon -h ``` for more.
 
