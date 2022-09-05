@@ -35,5 +35,5 @@ Now, dig through your music collection, for example:
 To pull music out, do something like:
 ``` siPhon -i /mnt/ipod get -a Kansas```
 
-See ''' siPhon -h ''' for more.
+See ``` siPhon -h ``` for more.
 
