@@ -11,8 +11,7 @@ iTunes handles the storage of audio on Apple players poorly.  It splits the set 
 
 ## How?
 
-We scan the whole disk (or at least the directory you specify, inefficiently; it takes a few minutes on the average iPod), reading the tags in the media files and compiling a database of information on your music.  This database is similar to the one iTunes itself builds, but separate from it.  It will not be automatically maintained, so you may need to rebuild it after you make changes.  It stores this database on the device in a directory called *siPhon-db*, so you'll need write access to the filesystem for this to work.  If you're just trying to pull data out and, for example, you've got a Mac format iPod on a Linux system without writable HFSPlus, you coul copy the data to a filesystem that's writable.
-
+We scan the whole disk (or at least the directory you specify, inefficiently; it takes a few minutes on the average iPod), reading the tags in the media files and compiling a database of information on your music.  This database is similar to the one iTunes itself builds, but separate from it.  It will not be automatically maintained, so you may need to rebuild it after you make changes.  It stores this database on the device in a directory called *siPhon-db*, so you'll need write access to the filesystem for this to work.  If you're just trying to pull data out and, for example, you've got a Mac format iPod on a Linux system without writable HFSPlus, you can specify a different database directory on a writable filesystem using the *--db* option.  The database will be created (or loaded from) there.
 Once the scan is done, you can list out your albums, artists, or songs.  You can also copy them out to another place, automatically renaming them in transit.
 
 ### Installation
