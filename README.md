@@ -31,10 +31,8 @@ First, mount your device somewhere, scan it and build the database:
 ```$ siPhon -i /mnt/IPOD scan ```
 
 Now, dig through your music collection, for example:
-```$ siPhon -i /mnt/IPOD ls -a Kansas```
-
-To pull music out, do something like:
-```$ siPhon -i /mnt/ipod get -a Kansas
+```
+$ siPhon -i /mnt/IPOD ls -a Kansas
 Artist: Kansas / Album: Point Of Know Return
 Name: Nobody's Home / File: ./iPod_Control/Music/F00/BMXG.mp3
 --------
@@ -52,8 +50,13 @@ Name: Point Of Know Return / File: ./iPod_Control/Music/F03/WAIL.mp3
 --------
 Artist: Kansas / Album: Power
 Name: Secret Service / File: ./iPod_Control/Music/F03/TYTH.mp3
---------
 
+```
+
+To pull music out, do something like:
+
+```
+$ siPhon -i /mnt/ipod get -a Kansas -A Power
 ```
 
 See ```$ siPhon -h ``` for more.
