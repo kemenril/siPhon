@@ -7,7 +7,7 @@ This is a simple utility that will take a directory full of badly named MP3 or M
 
 ### Why?
 
-iTunes handles the storage of audio on Apple players poorly.  It splits the set of audio files on the device into about 50 different directories in the music folder, and just fills those directories up with files given meaningless, four-character names.  The iTunes database knows where the music is, but looking at the device, you won't.  If you want to pull some music back off of your iPod, say, to load it locally onto a machine and play it there, or whatever, it's not an easy thing to do.  This software fixes that.
+iTunes handles the storage of audio on Apple players poorly.  It splits the set of audio files on the device into about 50 different directories in the music folder, and just fills those directories up with files given meaningless, four-character names.  The iTunes database knows where the music is, but looking at the device, you won't.  If you want to pull some music back off of your iPod, say, to load it locally onto a machine and play it there, or whatever, it's not an easy thing to do.  This software fixes that.  You could, in fact, do something similar with a few different MP3 tag management applications, but none of those were quite as simple to configure and reconnfigure as I wanted.
 
 ## How?
 
