@@ -27,7 +27,7 @@ There really is none to speak of.  Put it somewhere from which you can run it.
 ### Usage
 
 First, mount your device somewhere, scan it and build the database:
-``` siPhon -i /mnt/IPOD scan
+``` siPhon -i /mnt/IPOD scan ```
 
 Now, dig through your music collection, for example:
 ``` siPhon -i /mnt/IPOD ls -a Kansas```
