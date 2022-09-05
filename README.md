@@ -55,7 +55,7 @@ Name: Secret Service / File: ./iPod_Control/Music/F03/TYTH.mp3
 To pull music out, do something like:
 
 ```
-$ siPhon -i /mnt/ipod get -a Kansas -A Power
+$ siPhon -i /mnt/ipod get -a Kansas -A Power -o Music/extracted
 ```
 
 See ```$ siPhon -h ``` for more.
