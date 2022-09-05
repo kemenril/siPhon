@@ -22,6 +22,7 @@ There really is none to speak of.  Put it somewhere from which you can run it.
 
    * Mutagen, for ID3 tags and so on.
    * python-magic, for recognition of files by magic number (yes, in theory, we don't even need good file extensions.
+   * tqdm, for the progress bar.
 
 ### Usage
 
