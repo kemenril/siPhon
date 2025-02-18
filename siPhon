@@ -124,7 +124,7 @@ def tsanitize(st):
 
 #Clean up filenames
 def fsanitize(st):
-	st = re.sub('[^a-zA-Z0-9 -_.,]','',st)
+	st = re.sub('[^a-zA-Z0-9 \-_.,]','',st)
 	st = re.sub('\s+$','',st)
 	st = re.sub('^\s+','',st)
 	return st
