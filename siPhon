@@ -114,19 +114,19 @@ def rmdb():
 #Clean up tags
 def tsanitize(st):
 	st = str(st)
-	st = re.sub("^\['",'',st)
-	st = re.sub('^\["','',st)
-	st = re.sub("'\]$",'',st)
-	st = re.sub('"\]$','',st)
-	st = re.sub("^\s+",'',st)
-	st = re.sub("\s+$",'',st)
+	st = re.sub(r"^\['",'',st)
+	st = re.sub(r'^\["','',st)
+	st = re.sub(r"'\]$",'',st)
+	st = re.sub(r'"\]$','',st)
+	st = re.sub(r"^\s+",'',st)
+	st = re.sub(r"\s+$",'',st)
 	return st
 
 #Clean up filenames
 def fsanitize(st):
-	st = re.sub('[^a-zA-Z0-9 \-_.,]','',st)
-	st = re.sub('\s+$','',st)
-	st = re.sub('^\s+','',st)
+	st = re.sub(r'[^a-zA-Z0-9 \-_.,]','',st)
+	st = re.sub(r'\s+$','',st)
+	st = re.sub(r'^\s+','',st)
 	return st
 
 def scan():
