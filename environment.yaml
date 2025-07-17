@@ -1,0 +1,8 @@
+name: siphon
+channels:
+- conda-forge
+dependencies:
+- python
+- mutagen
+- tqdm
+- python-magic
