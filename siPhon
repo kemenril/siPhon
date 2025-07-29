@@ -240,10 +240,17 @@ def lsalbums():
 def get():
 	if not readdb():
 		return False
+	working = os.getcwd()
+
+	if args.dest.startswith("/"):
+ 		destdir = args.dest
+	else:
+		destdir = os.path.join(working,args.dest)
+
 	os.chdir(args.base)
 	for source in (progress := tqdm(find())): 
 		f = Files[source]
-		ddir = os.path.join(args.dest,fsanitize(f['artist']),fsanitize(f['album']))
+		ddir = os.path.join(destdir,fsanitize(f['artist']),fsanitize(f['album']))
 		dname = ""
 		if (f['trnum'] != ""):
 			dname = f['trnum'] + ". "
